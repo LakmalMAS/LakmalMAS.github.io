@@ -1,224 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEIDE - 3D Learning Platform</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <style>
-    body {
-      background: #white;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-    }
-
-    .navbar {
-      background-color: #1e1e2f;
-    }
-
-    .navbar-brand {
-      font-family: 'Orbitron', sans-serif;
-      color: #00ffc3 !important;
-      font-size: 1.4rem;
-    }
-
-    .nav-link {
-      color: #fff !important;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #00ffc3 !important;
-    }
-
-    header {
-      background-color: #1e1e2f;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      color: #00ffc3;
-      font-size: 4rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #aaa;
-    }
-
-    .carousel-inner img {
-      height: 450px;
-      object-fit: cover;
-    }
-
-    .carousel-caption {
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 8px;
-      padding: 1rem;
-    }
-
-    .card {
-      background-color: #2c2c3e;
-      color: white;
-      border: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 15px rgba(0, 255, 195, 0.5);
-    }
-
-    .card h3 {
-      color: #00ffc3;
-      font-family: 'Orbitron', sans-serif;
-    }
-
-    .btn {
-      border-radius: 25px;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #1e1e2f;
-      text-align: center;
-      padding: 1rem;
-      font-size: 14px;
-      color: #bbb;
-    }
-
-    @media (max-width: 767px) {
-      .carousel-inner img {
-        height: 250px;
-      }
-      .card {
-        margin-bottom: 1.5rem;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100e19">
+  <meta name="description" content="CEIDE is a creative launchpad for 3D, animation and game design. Learn the tools, build your portfolio and discover studios.">
+  <meta property="og:title" content="CEIDE — Build worlds. Build your future.">
+  <meta property="og:description" content="A creative launchpad for 3D artists, animators and game makers.">
+  <meta property="og:image" content="https://lakmalmas.github.io/ceide-assets/hero.webp">
+  <title>CEIDE — Build worlds. Build your future.</title>
+  <link rel="icon" href="ceide-assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="ceide-assets/style.css">
+  <script src="ceide-assets/data.js" defer></script>
+  <script src="ceide-assets/app.js" defer></script>
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark px-3">
-    <a class="navbar-brand" href="index.html" style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'">CEIDE</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 20%;">
-      <ul class="navbar-nav ms-2">
-        <li class="nav-item"><button class="btn btn-outline-success me-2" type="submit">Search</button></li>
-        
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
-        <li class="nav-item"><a class="nav-link" href="Pro.html">CEIDE Pro</a></li>
-        <li class="nav-item"><a class="nav-link" href="Company Directory.html">Company Directory</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="Contacts.html">About</a></li>
-      </ul>
-    </div>
-</nav>
-
-  <header>
-    <h1>CEIDE</h1>
-  <p>Portfolio | Career Connect | Learning Center</p>
-</header>
-
-  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/28.png" class="d-block w-100" alt="Animation">
-        <div class="carousel-caption">
-          <h5>Animation Mastery</h5>
-          <p>Create expressive characters and cinematic motion.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/25.png" class="d-block w-100" alt="Game Design">
-        <div class="carousel-caption">
-          <h5>Game Design Development</h5>
-          <p>From idea to playable world – build your own universe.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/27.png" class="d-block w-100" alt="VFX">
-        <div class="carousel-caption">
-          <h5>Visual Effects  3D Modeling</h5>
-          <p>Transform imagination into visual masterpieces.</p>
-        </div>
+  <a href="#main" class="skip">Skip to content</a>
+  <svg class="icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-mark" viewBox="0 0 36 36"><path fill="currentColor" d="M3 10.5 18 2l15 8.5v6l-15-8.6-9.5 5.4v9.4l9.5 5.4 15-8.6v6L18 34 3 25.5z"/><path fill="currentColor" d="m16 13.9 7.3 4.1-7.3 4.1z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.7"/><path d="m15 15 4.5 4.5"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6.5 4.5h11v15L12 16l-5.5 3.5z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9zM4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></symbol>
+  </svg>
+  <header class="topbar" id="top">
+    <div class="wrap nav-wrap">
+      <a class="wordmark" href="#top" aria-label="CEIDE home"><svg aria-hidden="true"><use href="#i-mark"/></svg>CEIDE<span>.</span></a>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#learn">Learn</a><a href="#showcase">Showcase</a><a href="#careers">Careers</a><a href="#about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button top-search" id="search-open" type="button" aria-label="Search CEIDE"><svg><use href="#i-search"/></svg></button>
+        <button class="button nav-studio" type="button" data-studio>My Studio <svg><use href="#i-up"/></svg></button>
+        <button class="icon-button menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
-
-<div class="container mt-5">
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <div class="card p-4">
-          <i class="fas fa-user-circle fa-2x mb-3"></i>
-          <h3>CEIDE Business</h3>
-          <p>Whatever your goal, the path starts here</p>
-          <a href="Pro.html" class="btn btn-primary mt-3">Go to Dashboard</a>
+  </header>
+  <main id="main">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero wrap">
+        <div class="hero-visual"><picture><source media="(max-width: 490px)" srcset="ceide-assets/hero-mobile.webp"><img src="ceide-assets/hero.webp" alt="" width="1536" height="1024" fetchpriority="high"></picture></div>
+        <div class="viewfinder" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <p class="hero-ref" aria-hidden="true">FIG. 01 &nbsp; / &nbsp; STUDIO RENDER</p>
+        <div class="hero-copy">
+          <p class="micro hero-kicker"><span class="signal"></span> THE CREATIVE LAUNCHPAD</p>
+          <h1 id="hero-title">Build worlds.<br><span>Build your<br class="hero-break"> future.</span></h1>
+          <p class="hero-description">Learn 3D, animation and game design. Make work you’re proud to show. Find out where it could take you.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#learn">Explore courses <svg><use href="#i-arrow"/></svg></a>
+            <a class="hero-link" href="#showcase">View showcase <svg><use href="#i-up"/></svg></a>
+          </div>
         </div>
+        <p class="hero-caption" aria-hidden="true"><span></span> CEIDE EXPLORER &nbsp; / &nbsp; 001</p>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4">
-          <i class="fas fa-images fa-2x mb-3"></i>
-          <h3>Portfolio</h3>
-          <p>Showcase your talent and projects</p>
-          <a href="portfolio.html" class="btn btn-success mt-3">View Portfolio</a>
+      <div class="wrap workflow" aria-label="The CEIDE workflow">
+        <a href="#learn"><small>01 /</small><span>Learn the tools</span><svg><use href="#i-up"/></svg></a>
+        <a href="#showcase"><small>02 /</small><span>Show your work</span><svg><use href="#i-up"/></svg></a>
+        <a href="#careers"><small>03 /</small><span>Find your next step</span><svg><use href="#i-up"/></svg></a>
+      </div>
+    </section>
+    <section class="section learn-section" id="learn" aria-labelledby="learn-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="micro section-label"><span>01</span> / LEARNING CENTER</p><h2 id="learn-title">Get into <em>the craft.</em></h2></div>
+          <p>Short, hands-on lessons for the tools behind 3D art, animation and real-time worlds. Pick a tool and build something.</p>
         </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4">
-          <i class="fas fa-chalkboard-teacher fa-2x mb-3"></i>
-          <h3>Courses</h3>
-          <p>Access tutorials for Unreal, Blender, Maya</p>
-          <a href="Courses.html" class="btn btn-info mt-3">Start Learning</a>
+        <div class="toolbar">
+          <div class="filters" id="course-filters" aria-label="Filter courses by tool"></div>
+          <p class="micro result-count" id="course-count" role="status"></p>
         </div>
+        <div class="course-grid" id="course-grid"></div>
+        <noscript><p>Explore official training for <a href="https://docs.blender.org/manual/en/latest/">Blender</a>, <a href="https://dev.epicgames.com/community/unreal-engine/learning">Unreal Engine</a>, and <a href="https://www.autodesk.com/learn/ondemand/curated/maya-quick-start-guide">Maya</a>. Enable JavaScript for CEIDE’s lessons and studio tools.</p></noscript>
       </div>
-    </div>
-
-    <div class="row text-center">
-      <div class="col-md-6 mb-4">
-        <div class="card p-4">
-          <i class="fas fa-building fa-2x mb-3"></i>
-          <h3>Company Directory</h3>
-          <p>Find companies hiring 3D, animation and game design talent.</p>
-          <a href="Company Directory.html" class="btn btn-dark mt-3">Browse Companies</a>
+    </section>
+    <section class="section showcase-section" id="showcase" aria-labelledby="showcase-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="micro section-label"><span>02</span> / CREATOR SHOWCASE</p><h2 id="showcase-title">From viewport<br> <em>to portfolio.</em></h2></div>
+          <p>See how different projects tell a story. Then build an entry of your own: give it a title, explain your process and link to the finished work.</p>
         </div>
+        <div class="toolbar showcase-toolbar"><div class="filters" id="project-filters" aria-label="Filter showcase projects"></div><button class="button button-outline" type="button" data-new-project>Add your work <svg><use href="#i-plus"/></svg></button></div>
+        <p class="sr-only" id="project-count" role="status"></p>
+        <div class="project-grid" id="project-grid"></div>
       </div>
-      <div class="col-md-6 mb-4">
-        <div class="card p-4">
-          <i class="fas fa-envelope fa-2x mb-3"></i>
-          <h3>About</h3>
-          <p>Use our built-in form to directly reach out.</p>
-          <a href="Contacts.html" class="btn btn-warning mt-3">Contact Now</a>
+    </section>
+    <section class="section career-section" id="careers" aria-labelledby="careers-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="micro section-label"><span>03</span> / STUDIO DIRECTORY</p><h2 id="careers-title">Find where<br> <em>you fit.</em></h2></div>
+          <p>Explore game, animation and VFX studios. Save the ones you want to follow and visit their official pages for current opportunities.</p>
         </div>
+        <div class="toolbar directory-toolbar">
+          <div class="filters" id="studio-filters" aria-label="Filter studios by industry"></div>
+          <label class="search-field" for="studio-search"><svg><use href="#i-search"/></svg><input type="search" id="studio-search" placeholder="Find a studio"></label>
+        </div>
+        <p class="micro result-count directory-count" id="studio-count" role="status"></p>
+        <div class="studio-grid" id="studio-grid"></div>
       </div>
-    </div>
-</div>
-
-  <footer>
-    <p>&copy; 2025 CEIDE | Designed with 💻 using HTML  CSS in Dreamweaver</p>
+    </section>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-band">
+        <div class="about-index micro"><span class="signal"></span> CEIDE / FIELD NOTES</div>
+        <div><h2 id="about-title">Make your next move.</h2><p>CEIDE started as a multimedia web design assignment by Lakmal MAS. It brings three things together: learning a tool, showing what you made, and finding studios that do the kind of work you want to do.</p><button class="button button-dark" type="button" data-studio>Open My Studio <svg><use href="#i-arrow"/></svg></button></div>
+        <svg class="about-mark" viewBox="0 0 36 36" aria-hidden="true"><use href="#i-mark"/></svg>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner"><div><a class="wordmark" href="#top" aria-label="CEIDE home"><svg aria-hidden="true"><use href="#i-mark"/></svg>CEIDE<span>.</span></a><p>A creative launchpad by Lakmal MAS.</p></div><div class="footer-links"><a href="#learn">Learn</a><a href="#showcase">Showcase</a><a href="#careers">Careers</a><a href="https://github.com/LakmalMAS/LakmalMAS.github.io">GitHub <svg><use href="#i-up"/></svg></a></div><a class="back-top" href="#top">Back to top ↑</a></div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <dialog id="course-dialog" class="dialog course-dialog" aria-labelledby="course-dialog-title"><div class="dialog-shell"><button class="icon-button dialog-close" type="button" data-close aria-label="Close course"><svg><use href="#i-close"/></svg></button><div id="course-content"></div></div></dialog>
+  <dialog id="project-dialog" class="dialog" aria-labelledby="project-dialog-title"><div class="dialog-shell"><button class="icon-button dialog-close" type="button" data-close aria-label="Close project"><svg><use href="#i-close"/></svg></button><div id="project-content"></div></div></dialog>
+  <dialog id="studio-dialog" class="dialog studio-dialog" aria-labelledby="studio-title"><div class="dialog-shell"><button class="icon-button dialog-close" type="button" data-close aria-label="Close My Studio"><svg><use href="#i-close"/></svg></button><div id="studio-content"></div></div></dialog>
+  <dialog id="search-dialog" class="dialog search-dialog" aria-labelledby="search-title"><div class="dialog-shell"><button class="icon-button dialog-close" type="button" data-close aria-label="Close search"><svg><use href="#i-close"/></svg></button><h2 id="search-title">Search CEIDE</h2><label class="search-field"><svg><use href="#i-search"/></svg><input type="search" id="global-search" aria-label="Search courses, projects and studios" placeholder="Courses, projects, studios…" autocomplete="off"></label><div id="search-results" class="search-results"></div></div></dialog>
+  <p id="toast" class="toast" role="status"></p>
 </body>
 </html>
