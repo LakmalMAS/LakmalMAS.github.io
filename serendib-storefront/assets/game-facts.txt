@@ -1,0 +1,17 @@
+SERENDIB STILL BREATHES
+A game by Studio 141
+
+Survive a post-apocalyptic Colombo in a single-player, third-person action adventure.
+Explore a journey from an isolated bunker through Jungle Gorge and into the streets of Colombo. Encounter zombies and hostile survivors in a Sri Lankan setting.
+
+Developer: Studio 141
+Platform: Windows PC (development build)
+Genre: Third-person action adventure / survival
+Mode: Single-player
+Status: In development
+Release date: To be announced
+System requirements: To be confirmed after benchmarking
+
+The included images are from the current project. Cinematic images were captured in Unreal Engine Sequencer; gameplay images may include the in-game HUD. Visuals may change during development.
+
+This media kit contains game information and promotional screenshots, not the Unreal Engine source project or a playable game build.
